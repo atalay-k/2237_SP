@@ -614,10 +614,36 @@ datatable(g)
 - Elif'in **z** puanı $(60-50.2)/10.2=0.96$ 'dir. Elif grubun **%83**'ünden daha başarılıdır.
 - Esin'in Grup2 için **z** puanı $(70-50.2)/10.2=1.94$ 'dir. Esin'in grubun **%97**'inden daha başarılıdır.
 
+---
+## Uygulama - II
+
+```{r echo=FALSE}
+Ornek3 <- readRDS("Ornek3.Rds")
+Ornek3 <- mutate(Ornek3,Sınav_z=round(scale(Sınav),2))
+datatable(Ornek3)
+```
 
 ---
-## Uygulama - III
+## Uygulama - II
 
+```{r echo=FALSE}
+Ornek3 <- mutate(Ornek3,Sınav_p= round(pnorm(Sınav_z),2))
+datatable(Ornek3)
+```
+
+---
+## Uygulama - II
+
+```{r echo=FALSE}
+Ornek3 <- mutate(Ornek3,Sınav_y= round(pnorm(Sınav_z),2)*100)
+datatable(Ornek3)
+```
+
+
+---
+## Uygulama - III 
+
+.small[
 - Ortalaması 65 standart sapması 15.8 olan A testi ve ortalaması 65 standart sapması 8.58 olan B testlerinden 70 alan Ahmet’in, gruptaki arkadaşlarına göre B testinde daha başarılı olduğunu
 söyleyebilir miyiz? 
 - Belirtilen sınavlara ilişkin `r emo::ji('link')`[veriler](Ornek4.xlsx) dosyasında yer almaktadır. sınavlara ilişikin ortalama ve standart sapma aşağıdaki gibidir.
@@ -630,6 +656,7 @@ söyleyebilir miyiz?
 - Ahmet'in A testinden  **z** puanı $(70-65.9)/15.8=0.25$ 'dir. Ahmet grubun **%60**'ından daha başarılıdır.
 
 - Ahmet'in B testinden  **z** puanı $((70-64.9)/8.58=0.59$ 'dir. Ahmet grubun **%73**'ünden daha başarılıdır.
+]
 
 ---
 ## Uygulama Cevaplar
