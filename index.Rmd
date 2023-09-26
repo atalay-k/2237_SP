@@ -375,16 +375,13 @@ curve(dnorm(x, mean=mean(ornekT), sd=sd(ornekT)), add=TRUE,  col="darkblue", lwd
 Bu dönüşümler hariç
 
 - 0-1 dönüşümü 
+
+$$\frac{x- min}{x- max}$$
 - Maksimum değer dönüşümü
 
+$$\frac{x- min}{x- max}*(\text{yeni max - yeni min}) + \text{yeni min}$$
 gibi dönüşümlerde bulunmaktadır.
 
----
-## 0-1 dönüşümü
-
-
----
-## Maksimum değer dönüşümü
 
 
 
@@ -564,6 +561,7 @@ datatable(Ornek2)
 datatable(Ornek2)    
 ```
 ]
+
 ---
 ## Uygulama - I
 .small[
@@ -632,6 +630,7 @@ söyleyebilir miyiz?
 - Ahmet'in A testinden  **z** puanı $(70-65.9)/15.8=0.25$ 'dir. Ahmet grubun **%60**'ından daha başarılıdır.
 
 - Ahmet'in B testinden  **z** puanı $((70-64.9)/8.58=0.59$ 'dir. Ahmet grubun **%73**'ünden daha başarılıdır.
+
 ---
 ## Uygulama Cevaplar
 
