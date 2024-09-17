@@ -2,7 +2,7 @@
 title: "`r emo::ji('stats')` Sınav Sonuçlarının Değerlendirilmesi"
 subtitle: "<br> `r emo::ji('graph')` Sıralama ve Karşılaştırma ile Puanlar Dönüşümleri"
 author: "Dr. Kubra Atalay Kabasakal" 
-date: "27 Ekim 2023 - Bilkent Üniversitesi"
+date: "19 Eylül 2023 - Bilkent Üniversitesi"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -32,7 +32,6 @@ options(digits=3)
 library(dplyr)
 library(tidyverse)
 library(dplyr)
-library(tuev)
 library(emo)
 library(knitr)
 
@@ -252,6 +251,20 @@ dağılımların **aynı ortalama ve standart sapmaya sahip bir dağılıma dön
 
 - **Dönüşüm**, ölçme sonuçlarının yorumlanmasını kolaylaştırır, **farklı
 dağılımlardaki ölçme sonuçlarının birbiriyle karşılaştırılabilmesine olanak** sağlar.
+
+- Test puanlarını sıralamak ve karşılaştırmak için kullanılan puan dönüşümleri, farklı testler veya test formatları arasında puanları standartlaştırmayı veya yorumlamayı amaçlar.
+
+
+---
+## Örnek Puanlar
+
+- **Yüzdelik Sıra** : Yüzdelik dilim sıralaması, belirli bir puanın altında puan alan sınav katılımcılarının yüzdesini gösterir.
+- **z ve T puanı**:  ortalama ve standart sapmaya dayalı hesaplanır.
+- **Ölçeklendirilmiş Puanlar**: Standrat testlerde yaygın olarak kullanılır
+- **Stanine puanları** : Puanlar, ortalaması 5 ve standart sapması 2 olan dokuz geniş kategoriye ayrılmıştır.
+- **Doğru Puan Yüzdesi**:  doğru cevaplanan soruların yüzdesi.
+- **Kümülatif Not Ortalaması**: Eğitim ortamlarında akademik performansı zaman içinde sıralamak için kullanılır.
+- **Bant Puanları**: Puanlar bantlar veya seviyeler halinde rapor edilir. Örneğin, IELTS, her seviyenin bir yetenek aralığını gösterdiği 1 ila 9 arasında bir bant puanı kullanır.
 
 ---
 ## z puanı
